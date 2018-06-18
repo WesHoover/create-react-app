@@ -46,7 +46,7 @@ class Footer extends Component {
 						</span>
 					</div>
 				</div>
-				<hr />
+				<hr className='sm-hidden'/>
 			</footer>
 		)
 	}
