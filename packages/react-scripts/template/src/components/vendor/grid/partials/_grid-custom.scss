@@ -1,0 +1,13 @@
+.container {
+	margin: 0 auto;
+	max-width: $screen-max-width;
+	padding: 0 70px;
+	position: relative;
+	@include m-sm {
+		padding: 0;
+	}
+}
+.col {
+	padding-left: 25px;
+	padding-right: 25px;
+}

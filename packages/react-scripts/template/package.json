@@ -1,0 +1,34 @@
+{
+  "name": "testappstest-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "create-react-app": "^1.5.2",
+    "dfa-react-base": "1.1.75",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "scripts": {
+    "test:lint:js": "eslint src/**/*.js src/**/*.jsx",
+    "test:lint:css": "stylelint \"**/*.scss\"",
+    "test:unit": "react-scripts test --env=jsdom",
+    "stylelint-check": "stylelint-config-prettier-check",
+    "eject": "react-scripts eject",
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "prettier:check:js": "prettier --debug-check src/**/*.js src/**/*.jsx",
+    "prettier:check:scss": "prettier --debug-check src/**/*.scss",
+    "prettier:check": "run-s prettier:check:**",
+    "prettier:fix:js": "prettier --write src/**/*.js src/**/*.jsx",
+    "prettier:fix:scss": "prettier --write src/**/*.scss",
+    "prettier:fix": "prettier --write prettier:fix:**",
+    "styleguide": "styleguidist server",
+    "styleguide-build": "styleguidist build",
+    "flow": "flow",
+    "test": "run-s test:**"
+  }
+}
