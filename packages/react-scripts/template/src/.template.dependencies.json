@@ -1,0 +1,13 @@
+{
+  "dependencies": {	
+	"npm-run-all": "",
+    "eslint": "",
+    "stylelint": "",
+    "stylelint-config-standard": "",
+    "stylelint-no-unsupported-browser-features": "",
+    "eslint-plugin-react": "",
+    "eslint-config-airbnb": "",
+    "eslint-plugin-jsx-a11y": "",
+    "react-styleguidist": ""
+  }
+}
