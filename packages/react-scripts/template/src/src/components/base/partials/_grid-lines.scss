@@ -1,0 +1,45 @@
+//grid lines; extend parent element
+.grid-lines {
+	[class*='grid'] {	
+		border-right: 1px solid $light-warm-gray;
+	}
+	[class*='col'] {
+		border-left: 1px solid $light-warm-gray;
+	}
+	&.grid-lines-hide-sm {
+		[class*='grid'] {	
+			border-right: 1px solid $light-warm-gray;
+			@include m-sm {
+				border-right: none;
+			}
+		}
+		[class*='col'] {
+			border-left: 1px solid $light-warm-gray;
+			@include m-sm {
+				border-left: none;
+				border-bottom: 1px solid $light-warm-gray;
+			}
+		}
+	}	
+	&.grid-lines-dark-bg {
+		[class*='grid'] {	
+			border-color: $extralight-warm-gray-0-3;
+		}
+		[class*='col'] {
+			border-color: $extralight-warm-gray-0-3;
+		}
+		hr {
+			background: $extralight-warm-gray-0-3;
+		}
+	}
+}
+hr {
+	margin: 0;
+	width: 100%;
+	position: absolute;
+	height: 1px;
+	border: none;
+	background: $light-warm-gray;
+	left: 0;
+	bottom: 0;
+}

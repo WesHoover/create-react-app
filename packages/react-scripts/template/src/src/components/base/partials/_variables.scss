@@ -1,0 +1,23 @@
+// media query  variables
+$screen-sm-min: 48rem;  // Small tablets and large smartphones (landscape view)
+$screen-md-min: 64rem;  // Small tablets (portrait view)
+$screen-lg-min: 90rem;  // Tablets and small desktops
+$screen-xl-min: 125rem; // Large tablets and desktops
+$screen-xxl-min: 160rem; // 2k and up 
+
+//colors
+$almost-black: rgb(51,63,72);
+$dark-cool-gray: rgb(91,103,112);
+$dark-warm-gray: rgb(125,125,122);
+$extralight-warm-gray: rgb(248,248,247);
+$extralight-warm-gray-0-3: rgba(248, 248, 247, 0.3);
+$light-cool-gray: rgb(162,170,173);
+$light-warm-gray: rgb(228,228,227);
+$medium-cool-gray: rgb(124,135,142);
+$medium-warm-gray: rgb(160,160,157);
+
+$bright-teal: rgb(0,183,189);
+$dark-teal: rgb(0,126,135);
+$teal: rgb(0,145,156);
+
+$white: #fff;
