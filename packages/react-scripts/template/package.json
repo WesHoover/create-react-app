@@ -29,6 +29,18 @@
     "styleguide": "styleguidist server",
     "styleguide-build": "styleguidist build",
     "flow": "flow",
-    "test": "run-s test:**"
-  }
+    "test": "run-s test:**",
+	"lighthouse": "lighthouse-automatic"
+  },
+    "lighthouse-automatic": {
+        "urls": [
+            {
+                "url": "http://localhost:3000",
+                "pageName": "Homepage"
+            }
+        ],
+        "output": "html",
+        "log": false,
+		"runOnce": true
+    }
 }
