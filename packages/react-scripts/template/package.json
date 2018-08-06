@@ -40,7 +40,7 @@
             }
         ],
         "output": "html",
-        "log": false,
-		"runOnce": true
+        "log": "false",
+		"runOnce": "true"
     }
 }
