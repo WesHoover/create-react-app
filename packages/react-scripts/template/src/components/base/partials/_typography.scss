@@ -1,0 +1,165 @@
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+  }
+  
+@mixin t-font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+@font-face{
+	font-family:"Avenir LT Book";
+	src:url("https://content.dimensional.com/media/fonts/9f6dfbe4-ae47-4f8e-b887-c99113fa09b1.woff2") format("woff2"),
+		url("https://content.dimensional.com/media/fonts/a9d360f4-5161-43ab-8475-b46d159844f8.woff") format("woff");
+}    
+@font-face{
+    font-family:"Avenir LT Black";
+    src:url("https://content.dimensional.com/media/fonts/ad58244e-b79c-4260-a588-c4a890416979.woff2") format("woff2"),
+		url("https://content.dimensional.com/media/fonts/0b167d86-9493-44ec-87e7-071d78b0dedc.woff") format("woff");
+} 
+
+:lang(ja) 	{
+	font-family: ’ヒラギノ角ゴ Pro W3’, ‘Hiragino Kaku Gothic Pro’, メイリオ, Meiryo, Osaka, ‘MS Pゴシック’, ‘MS PGothic’, sans-serif !important;
+}
+
+.t-italic {
+    font-style: italic;
+}
+.t-uppercase {
+    text-transform: uppercase;
+}
+.t-avenir {
+    font-family: "Avenir LT Book";
+}
+.t-chronicle {
+    font-family: "Chronicle Text G2 A", "Chronicle Text G2 B";
+    @extend .t-italic;
+}
+.t-sentinel {
+    font-family: "Sentinel A", "Sentinel B";
+}
+
+.t-heavy {
+    font-family: "Avenir LT Black";
+	text-rendering: optimizeLegibility;
+	font-weight: normal;
+}
+
+
+$text-colors-list: (
+    gray: $medium-cool-gray,
+    white: $white,
+    teal: $bright-teal,
+    charcoal: $almost-black
+);
+$text-align-list: (
+    left: left,
+    center: center
+);
+
+//hero
+ @each $color, $color-name in $text-colors-list {
+    @each $align, $text-align in $text-align-list {
+        .hero-#{$text-align}-#{$color} {
+            @extend .t-sentinel;
+            letter-spacing: normal;
+            color: #{$color-name};
+            font-size: 4rem;
+            text-align: $text-align;
+        }
+    }
+}
+
+//header
+$header-font-size-list: (
+    1: 2.75rem,
+    2: 2rem,
+    3: 2rem,
+    4: 1.5rem,
+    5: 1.5rem,
+    6: 1.125rem,
+    7: 1.125rem
+); 
+
+@each $i, $font-size in $header-font-size-list {
+    @if i != 7 {
+        h#{$i} {
+            font-size: $font-size;
+            @extend .t-sentinel;
+            @if $i == 1 {
+                font-weight: normal;
+            } @else {
+                font-weight: 300;
+            }
+            @if $i == 6 {
+                line-height: 1.5;
+            } @else {
+                line-height: 1.05;
+            }
+        }
+    }
+    @each $color, $color-name in $text-colors-list {
+        @each $align, $text-align in $text-align-list {
+            .h#{$i}-#{$text-align}-#{$color} {
+                color: #{$color-name};
+                text-align: $text-align;
+                @if $i == 3 or $i == 5 or $i == 7{
+                    @extend .t-italic;
+                }
+            }
+        }
+    }
+}
+
+//body 
+$body-font-size-list: (
+    1: 1rem,
+    2: 1rem,
+    3: 0.875rem,
+    4: 0.75rem
+);
+
+@each $i, $font-size in $body-font-size-list {
+    @each $color, $color-name in $text-colors-list {
+        @each $align, $text-align in $text-align-list {
+            .body-#{$i}-#{$text-align}-#{$color} {
+                @extend .t-avenir;
+                letter-spacing: normal;
+                color: #{$color-name};
+                font-size: $font-size;
+                text-align: $text-align;
+                text-transform: none;
+            }
+        }
+    }
+}
+
+//labels 
+$labels-font-size-list: (
+    1: 1.125rem,
+    2: 0.875rem,
+    3: 0.75rem,
+    4: 0.75rem,
+    5: 0.625rem
+);
+
+@each $i, $font-size in $labels-font-size-list {
+    @each $color, $color-name in $text-colors-list {
+        @each $align, $text-align in $text-align-list {
+            .label-#{$i}-#{$text-align}-#{$color} {
+                @extend .t-avenir;
+                @extend .t-uppercase;
+                letter-spacing: 0.075rem;
+                color: #{$color-name};
+                font-size: $font-size;
+                text-align: $text-align;
+                @if $i == 4 {
+                    font-weight: normal;
+                } @else {
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}
