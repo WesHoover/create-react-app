@@ -8,7 +8,17 @@
 	box-sizing: border-box;
 	display: flex;
 	flex-flow: row wrap;
-	margin: 0 (-$gl-gutter/2);
+	max-width: $screen-lg;
+	margin: 0 auto;
+	@include bp(lg) {
+		margin: 0 (-$gl-gutter/2);
+	}
+	@include bp(md) {
+		margin: 0 (-$gl-gutter-md/2);
+	}	
+	@include bp(sm) {
+		margin: 0;
+	}
 }
 // COLS
 [#{$gl-attributeName}~="#{$gl-colName}"],
@@ -17,6 +27,12 @@
 	box-sizing: border-box;
 	padding: 0 ($gl-gutter/2) $gl-gutter-vertical;
 	max-width: 100%;
+	@include bp(md) {
+		padding: 0 ($gl-gutter-md/2) $gl-gutter-vertical;
+	}
+	@include bp(sm) {
+		padding: 0 ($gl-gutter-md/2) $gl-gutter-vertical-sm;
+	}
 }
 // JUST "COL" & "COL_"
 [#{$gl-attributeName}~="#{$gl-colName}"],
@@ -172,6 +188,16 @@
 	@include bp(#{$mq-key}) {
 		[#{$gl-attributeName}*="#{$mq-key}-hidden"] {
 			display: none;
+		}
+	}
+}
+[class*="-visible"] {
+	display: none;
+}
+@each $mq-key, $mq-value in $gl-mq-list {
+	@include bp(#{$mq-key}) {
+		[#{$gl-attributeName}*="#{$mq-key}-visible"] {
+			display: block;
 		}
 	}
 }

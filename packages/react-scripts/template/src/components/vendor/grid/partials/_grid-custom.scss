@@ -1,13 +1,27 @@
 .container {
-	margin: 0 auto;
-	max-width: $screen-max-width;
-	padding: 0 70px;
+	padding: 0 ($gl-gutter/2 + 4.375rem);
 	position: relative;
+	@include m-lg {
+		padding: 0 ($gl-gutter-lg/2 + 3rem)
+	}
+	@include m-md {
+		padding: 0 ($gl-gutter-md/2 + 1.125rem)
+	}	
 	@include m-sm {
 		padding: 0;
 	}
-}
-.col {
-	padding-left: 25px;
-	padding-right: 25px;
+	&-noGutter-md {
+		[class*="grid"] {
+			@include m-md {
+				margin: 0 (-$gl-gutter-md);
+			}	
+		}
+	}
+	&-noGutter-sm {
+		[class*="grid"] {
+			@include m-sm {
+				margin: 0;
+			}	
+		}
+	}
 }

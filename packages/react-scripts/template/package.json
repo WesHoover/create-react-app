@@ -1,17 +1,24 @@
 {
-  "name": "testappstest-app",
+  "name": "dfa-cra",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@storybook/addon-notes": "^3.4.11",
+    "core-js": "^3.0.0-beta.3",
+    "coveo-search-ui": "^2.4382.16",
     "create-react-app": "^1.5.2",
     "dfa-react-base": "1.1.75",
+    "enzyme": "^3.4.1",
+    "enzyme-adapter-react-16": "^1.2.0",
     "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.4.0",
+    "stylelint": "^9.5.0",
+    "stylelint-config-prettier": "^4.0.0"
   },
   "scripts": {
-    "test:lint:js": "eslint src/**/*.js src/**/*.jsx",
+    "test:lint:js": "eslint src/",
     "test:lint:css": "stylelint \"**/*.scss\"",
-    "test:unit": "react-scripts test --env=jsdom",
+    "test:unit": "npm run build-css && react-scripts test --env=jsdom",
     "stylelint-check": "stylelint-config-prettier-check",
     "eject": "react-scripts eject",
     "build-css": "node-sass-chokidar src/ -o src/",
@@ -20,15 +27,42 @@
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
+    "postbuild": "robocopy build/static/ ../static/ /mir /njs /njs /np /ndl /nfl /ns /nc & robocopy build/ ../static/ asset-manifest.json /njs /njs /np /ndl /nfl /ns /nc & robocopy src/ ../static/css/ rte-styles.css /njs /njs /np /ndl /nfl /ns /nc & echo static created",
     "prettier:check:js": "prettier --debug-check src/**/*.js src/**/*.jsx",
     "prettier:check:scss": "prettier --debug-check src/**/*.scss",
     "prettier:check": "run-s prettier:check:**",
     "prettier:fix:js": "prettier --write src/**/*.js src/**/*.jsx",
     "prettier:fix:scss": "prettier --write src/**/*.scss",
     "prettier:fix": "prettier --write prettier:fix:**",
-    "styleguide": "styleguidist server",
-    "styleguide-build": "styleguidist build",
     "flow": "flow",
-    "test": "run-s test:**"
+    "test": "run-s test:**",
+    "lighthouse": "lighthouse-automatic",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "lighthouse-automatic": {
+    "urls": [
+      {
+        "url": "http://localhost:3000",
+        "pageName": "Homepage"
+      }
+    ],
+    "output": "html",
+    "log": "false",
+    "runOnce": "true"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.4.11",
+    "@storybook/addon-info": "^3.4.11",
+    "@storybook/addon-knobs": "^3.4.11",
+    "@storybook/addon-links": "^3.4.11",
+    "@storybook/addon-options": "^3.4.11",
+    "@storybook/react": "^3.4.11",
+    "jest-cli": "^20.0.4",
+    "lighthouse-automatic": "^1.0.6",
+    "npm-run-all": "^4.1.3",
+    "react-draggable": "^3.0.5",
+    "react-scripts": "^1.1.4",
+    "serve": "^9.6.0"
   }
 }

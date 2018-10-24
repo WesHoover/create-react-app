@@ -54,8 +54,8 @@ module.exports = function(
     "prettier:fix:js": "prettier --write src/**/*.js src/**/*.jsx",
     "prettier:fix:scss": "prettier --write src/**/*.scss",
     "prettier:fix": "prettier --write prettier:fix:**",
-    "styleguide": "styleguidist server",
-    "styleguide-build": "styleguidist build",
+    "styleguide": "npm run build-css && styleguidist server",
+    "styleguide-build": "npm run build-css && styleguidist build",
     "flow": "flow",
     "test": "run-s test:**"
   };

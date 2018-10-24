@@ -5,9 +5,7 @@ import './GridDemo.css';
 export default function GridDemo() {	
 
 	return (
-		<div className="demoPage">    <section>
-
-        
+		<div className="demoPage">    <section>        
         <h2>Basic usage. Just add a class <code>.grid-*</code> (from -1 to -12)</h2>
         <p> A sizing class on every cell is not needed.
         </p>
@@ -1274,8 +1272,6 @@ export default function GridDemo() {
     &lt;div className="col">...&lt;/div>
     &lt;div className="col">...&lt;/div>
 &lt;/div></code></pre>
-
-        
         <h3>Header element</h3>
         <div className="grid-noGutter-noBottom">
             <div className="col-3">
@@ -1379,8 +1375,6 @@ export default function GridDemo() {
     &lt;div className="col-2">...&lt;/div>
     &lt;div className="col-2">...&lt;/div>
 &lt;/div></code></pre>
-
-
         <div className="grid-2_md-1">
             <div className="col">
                 <h3>Columns</h3>
@@ -1524,9 +1518,7 @@ export default function GridDemo() {
     &lt;div className="col-2"&lt;/div>
 &lt;/div></code></pre>
     </section>
-
-
-    <section className="doc">
+        <section className="doc">
         <h1 id="documentation">Helpers</h1>
         <h2>Grid &amp; associated classes</h2>
         <pre className="doc"><code>.grid

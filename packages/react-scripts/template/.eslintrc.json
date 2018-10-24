@@ -1,22 +1,51 @@
 {
-	"extends": [
-		"react-app",
-		"plugin:jsx-a11y/recommended"
-	],
-	"parser": "babel-eslint",
-	"env": {
-		"browser": true,
-		"jest": true,
-		"node": true
-	},
-	"plugins": [		
-		"react",		
-		"jsx-a11y"
-	],
-	"parserOptions": {
-		"sourceType": "module",
-		"ecmaFeatures": {
-		  "jsx": true
-		}
-	  }	
+  "extends": [
+    "react-app",
+    "plugin:jsx-a11y/recommended"
+  ],
+
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true,
+    "node": true
+  },
+  
+  "plugins": [  
+    "react",  
+    "jsx-a11y"
+  ],
+
+  "globals": {
+    "window": true
+  },
+
+  "rules": {
+    "no-console": 0,
+    "no-dupe-args": "error",
+    "no-dupe-class-members": "error",
+    "no-dupe-keys": "error",
+    "no-duplicate-case": "error",
+    "no-empty-character-class": "error",
+    "no-empty-pattern": "error",
+    "no-eval": "error",
+    "no-ex-assign": "error",
+    "no-extra-bind": "error",
+    "no-extra-boolean-cast": "error",
+    "no-extra-parens": ["error", "functions"],
+    "no-global-assign": "error",
+    "no-implied-eval": "error",
+    "no-inner-declarations": ["error", "functions"],
+    "no-invalid-regexp": "error",
+    "no-irregular-whitespace": "error",
+    "no-iterator": "error",
+    "no-label-var": "error",
+    "no-labels": ["error", { "allowLoop": false, "allowSwitch": false }],
+    "no-lone-blocks": "error",
+    "no-mixed-spaces-and-tabs": "error",
+    "no-multi-spaces": "error",
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+    "no-this-before-super": "error",
+    "no-unused-vars": "error"
+  }
 }
