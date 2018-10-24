@@ -5,6 +5,22 @@ html, body {
   padding: 0;
   font-size: 100%; }
 
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  letter-spacing: normal; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
 @font-face {
   font-family: "Avenir LT Book";
   src: url("https://content.dimensional.com/media/fonts/9f6dfbe4-ae47-4f8e-b887-c99113fa09b1.woff2") format("woff2"), url("https://content.dimensional.com/media/fonts/a9d360f4-5161-43ab-8475-b46d159844f8.woff") format("woff"); }
@@ -1645,3 +1661,14 @@ html, body {
   @media (max-width: 47.9375rem) {
     .container-noGutter-sm [class*="grid"] {
       margin: 0; } }
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  max-width: 80rem;
+  margin: 0 auto; }
+
+.main {
+  flex: 1; }

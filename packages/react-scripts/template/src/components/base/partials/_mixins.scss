@@ -83,7 +83,3 @@
 @mixin m-xl { 
     @media (max-width: #{$screen-xl-min}) {@content;} 
 } 
-
-
-
-

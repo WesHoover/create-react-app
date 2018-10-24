@@ -6,7 +6,7 @@
 	}
 	@include m-md {
 		padding: 0 ($gl-gutter-md/2 + 1.125rem)
-	}	
+	}
 	@include m-sm {
 		padding: 0;
 	}
@@ -24,4 +24,15 @@
 			}	
 		}
 	}
+}
+.app {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background: $white;
+	max-width: $screen-xl-min;
+	margin: 0 auto;
+}
+.main {
+	flex: 1;
 }

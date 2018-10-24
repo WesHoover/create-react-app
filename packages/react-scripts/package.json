@@ -1,6 +1,6 @@
 {
   "name": "dfa-react-base",
-  "version": "1.1.75",
+  "version": "1.1.82",
   "description": "Configuration and scripts for Create React App.",
   "repository": "kellric/create-react-app",
   "license": "MIT",
@@ -65,6 +65,8 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "d3": "^5.2.0",
+    "lighthouse": "^3.0.3",
+    "lighthouse-automatic": "^1.0.6",
     "moment": "^2.22.1",
     "node-sass-chokidar": "^1.2.2",
     "npm-run-all": "^4.1.2",
