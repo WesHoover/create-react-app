@@ -5,10 +5,6 @@ import { setOptions } from '@storybook/addon-options';
 import { withNotes } from '@storybook/addon-notes';
 import Container from './Container';
 
-setOptions({
-  name: `DDX Site`,
-  url: 'https://my-cms-dev.dimensional.com',
-});
 //withInfo toogles button(true is without button, flase is with a blue button)
 setDefaults({
   inline: true, 
