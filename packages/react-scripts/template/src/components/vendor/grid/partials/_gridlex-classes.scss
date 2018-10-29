@@ -8,7 +8,7 @@
 	box-sizing: border-box;
 	display: flex;
 	flex-flow: row wrap;
-	max-width: $screen-lg-min;
+	max-width: $screen-lg;
 	margin: 0 auto;
 	@include bp(lg) {
 		margin: 0 (-$gl-gutter/2);
@@ -29,6 +29,9 @@
 	max-width: 100%;
 	@include bp(md) {
 		padding: 0 ($gl-gutter-md/2) $gl-gutter-vertical;
+	}
+	@include bp(sm) {
+		padding: 0 ($gl-gutter-md/2) $gl-gutter-vertical-sm;
 	}
 }
 // JUST "COL" & "COL_"

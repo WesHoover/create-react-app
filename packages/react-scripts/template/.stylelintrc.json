@@ -1,5 +1,6 @@
 {
   "extends": "stylelint-config-prettier",
+  "defaultSeverity": "warning",
   "plugins": [
     "stylelint-no-unsupported-browser-features",
     "stylelint-scss"
@@ -10,17 +11,16 @@
       "ignore": ["rem"],
       "severity": "warning"
     }],
-    "indentation": "tab",
+    
     "string-quotes": "double",
-    "no-duplicate-selectors": true,
-    "color-hex-case": "lower",
+    "no-duplicate-selectors": true,   
     "color-hex-length": "long",
     "color-named": "never",
-    "selector-attribute-quotes": "always",
-    "declaration-block-trailing-semicolon": "always",
+    "selector-attribute-quotes": "always",   
     "declaration-no-important": true,        
     "function-url-quotes": "always",
     "font-weight-notation": "numeric",
-    "font-family-name-quotes": "always-where-recommended"    
+    "font-family-name-quotes": "always-where-recommended",
+    "block-no-empty": true
   }  
 }
