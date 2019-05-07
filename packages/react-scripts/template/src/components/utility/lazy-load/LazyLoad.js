@@ -63,9 +63,9 @@ class LazyLoad extends Component {
 		} = this.state; 
 
 		return (
-			<div className='tools-lazy-load' onScroll={this.onScroll}>
+			<div className='lazy-load' onScroll={this.onScroll}>
 				<ul>
-					<li className='tools-lazy-load-placeholder' style={{height: this.props.itemHeight * start}}>
+					<li className='lazy-load-placeholder' style={{height: this.props.itemHeight * start}}>
 					</li>
 					{this.props.children.map((child, i) => {
 						if (i >= start && i < end) {
@@ -73,7 +73,7 @@ class LazyLoad extends Component {
 						}
 						return null
 					})}
-					<li className='tools-lazy-load-placeholder' style={{height: this.props.itemHeight * (this.props.children.length - end)}}>
+					<li className='lazy-load-placeholder' style={{height: this.props.itemHeight * (this.props.children.length - end)}}>
 					</li>
 				</ul>
 			</div>

@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 class TooltipInline extends Component {
 	render() {
 		return (
-			<div className="tools-tooltip-inline">
-				<div className='tools-tooltip-inline-body'>
+			<div className="tooltip-inline">
+				<div className='tooltip-inline-body'>
 					{this.props.body}
 				</div>
 				<svg>

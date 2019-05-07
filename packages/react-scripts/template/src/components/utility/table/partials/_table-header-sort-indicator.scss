@@ -1,11 +1,11 @@
-.tools-table-header-sort-indicator {
+.table-header-sort-indicator {
 	padding-left: 0.25rem;
 	svg {
 		display: block;
 		width: 0.7rem;
 		height: 0.7rem;
 	}
-	.tools-image-fill {
+	.image-fill {
 		fill: $medium-cool-gray;
 	}
 	&-arrow {
@@ -15,7 +15,7 @@
 			}
 		}
 		&[data-active="true"] {
-			.tools-image-fill {
+			.image-fill {
 				fill: $bright-teal;
 			}
 		}

@@ -24,7 +24,7 @@ class ModalBackground extends Component {
 				tabIndex='0' 
 				onClick={onClose} 
 				onKeyPress={this.handleKeyPressEnter}
-				className={className || 'tools-modal-bg'}>
+				className={className || 'modal-bg'}>
 			</a>
 		)
 	}

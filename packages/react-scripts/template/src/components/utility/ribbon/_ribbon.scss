@@ -1,4 +1,4 @@
-.tools-ribbon {	
+.ribbon {	
 	position: absolute;
 	width: $model-build-ribbon-overhang+1.5rem;
 	margin-top: -0.75rem;
@@ -43,13 +43,13 @@
 		position: absolute;
 		top: 0;
 		right: 0;
-		@extend .tools-gl-top;
-		@extend .tools-gl-bottom;
+		@extend .gl-top;
+		@extend .gl-bottom;
 	}
 	&-collapse {
 		border-right: $model-build-ribbon-overhang solid transparent;
 		overflow: hidden;
-		.tools-ribbon-shadow {
+		.ribbon-shadow {
 			bottom: 0;
 			border-right: transparent;
 		}

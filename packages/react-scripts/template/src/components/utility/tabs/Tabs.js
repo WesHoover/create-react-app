@@ -18,14 +18,14 @@ class Tabs extends Component {
 			isCopyDisabled
 		} = this.props;
 		return (
-			<div className='tools-tabs'>
+			<div className='tabs'>
 				<ul>
 					{tabs.map((tab, i) => {
 						return (
-							<li key={tab[idKey]} className={'tools-tabs-item tools-tabs-item' + (tab[idKey] === activeTabId ? '-active' : '-inactive')}>
+							<li key={tab[idKey]} className={'tabs-item tabs-item' + (tab[idKey] === activeTabId ? '-active' : '-inactive')}>
 								<FakeButton	onClick={onFocusTab.bind(this, tab[idKey], i)}
 									aria-label={'Focus ' + tab[labelKey]}>
-									<div className='tools-tabs-item-label'>
+									<div className='tabs-item-label'>
 										{tab[labelKey]}
 									</div>
 								</FakeButton>

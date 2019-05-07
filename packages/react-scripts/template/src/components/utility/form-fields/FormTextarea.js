@@ -57,7 +57,7 @@ class FormTextarea extends Component {
 				isRequired={isRequired}
 				isError={isRequired && this.state.isEmpty && !this.state.isFocused} 
 				id={id}>
-				<Textarea className='tools-form-textarea' 
+				<Textarea className='form-textarea' 
 					type='text' 
 					value={val}
 					onChange={this.onChange} 

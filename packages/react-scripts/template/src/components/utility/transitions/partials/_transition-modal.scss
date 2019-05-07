@@ -1,25 +1,25 @@
-.tools-transition-modal {
+.transition-modal {
 	&-enter {
-		.tools-modal-bg {
+		.modal-bg {
 			opacity: 0;
 		}
 	}
-	&-enter-active.tools-transition-modal-enter {
-		.tools-modal-bg {
+	&-enter-active.transition-modal-enter {
+		.modal-bg {
 			opacity: 1;
 			transition: opacity $transition-modal-bg-duration;
 		}
 	}
 	&-leave {
-		.tools-modal-bg {
+		.modal-bg {
 			opacity: 1;
 		}	
-		.tools-modal-content {
+		.modal-content {
 			display: none;
 		}
 	}
-	&-leave-active.tools-transition-modal-leave {
-		.tools-modal-bg {
+	&-leave-active.transition-modal-leave {
+		.modal-bg {
 			opacity: 0;
 			transition: opacity $transition-modal-bg-duration;
 		}

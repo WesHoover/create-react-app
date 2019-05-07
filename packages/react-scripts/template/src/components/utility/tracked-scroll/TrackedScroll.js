@@ -53,12 +53,12 @@ class TrackedScroll extends Component {
 		} = this.props;
 
 		return (
-			<div className={'tools-tracked-scroll ' + (className || '')} onScroll={this.trackScroll} ref={this.setRef.bind(this, 'scrollContainer')}>
-				<div className='tools-tracked-scroll-inner-container'>
-					{overlayEnabled && <div className='tools-tracked-scroll-overlay'></div>}
+			<div className={'tracked-scroll ' + (className || '')} onScroll={this.trackScroll} ref={this.setRef.bind(this, 'scrollContainer')}>
+				<div className='tracked-scroll-inner-container'>
+					{overlayEnabled && <div className='tracked-scroll-overlay'></div>}
 					{React.Children.map(children, (child, i) => {
 						return (
-							<div className='tools-tracked-scroll-section' ref={this.setRef.bind(this, 'section_' + i)}>
+							<div className='tracked-scroll-section' ref={this.setRef.bind(this, 'section_' + i)}>
 								{child}
 							</div>
 						)

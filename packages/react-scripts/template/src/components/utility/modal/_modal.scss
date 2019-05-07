@@ -1,4 +1,4 @@
-.tools-modal {
+.modal {
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -22,16 +22,16 @@
 		transform: translate(-50%, -50%);
 		padding: 2.25rem;
 		&-body {
-			@extend .tools-body-2-left-dark;
+			@extend .body-2-left-dark;
 			max-height: calc(100vh - 15rem);
 			overflow: auto;
 		}		
-		> .tools-button-close {
+		> .button-close {
 			position: absolute;
 			top: 0;
 			right: 0;
-			@extend .tools-button-transparent-bg;
-			@extend .tools-button-gray-icon;
+			@extend .button-transparent-bg;
+			@extend .button-gray-icon;
 		}
 	}
 	h4 {
@@ -47,7 +47,7 @@
 		list-style-type: disc;
 		display: list-item;
 	}
-	.tools-button-primary, .tools-button-secondary {
+	.button-primary, .button-secondary {
 		width: calc(50% - 0.75rem);
 	}
 	&-actions {

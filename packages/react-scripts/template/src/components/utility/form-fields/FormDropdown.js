@@ -31,15 +31,15 @@ class FormDropdown extends Component {
 				isRequired={false}
 				isError={false} 
 				id={id}>
-				<span className={'tools-react-select-arrow' + (this.state.isMenuOpen ? '-open' : '-closed')}>
+				<span className={'react-select-arrow' + (this.state.isMenuOpen ? '-open' : '-closed')}>
 					<ImageArrow />
 				</span>
 				<Select value={val}
 					onChange={onChange}
 					options={options} 
 					placeholder='Untagged' 
-					className='tools-react-select'
-					classNamePrefix='tools-dropdown' 
+					className='react-select'
+					classNamePrefix='dropdown' 
 					onMenuOpen={this.onMenuOpen}
 					onMenuClose={this.onMenuClose}
 					isSearchable={false}

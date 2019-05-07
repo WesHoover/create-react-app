@@ -10,7 +10,7 @@ class TransitionToast extends Component {
 		} = this.props;
 
 		return (
-			<ReactCSSTransitionGroup transitionName='tools-transition-toast'
+			<ReactCSSTransitionGroup transitionName='transition-toast'
 				transitionEnterTimeout={500}
 				transitionLeaveTimeout={500}>
 					{isDisplay ?

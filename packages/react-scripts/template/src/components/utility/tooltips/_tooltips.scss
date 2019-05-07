@@ -1,8 +1,8 @@
-.tools-tooltip {
+.tooltip {
 	position: absolute;
 	z-index: 1;
 	&-onboarding {
-		@extend .tools-tooltip;
+		@extend .tooltip;
 		width: 13.75rem;
 		background: $light-gray;
 		right: 0;
@@ -20,7 +20,7 @@
 		}
 	}
 	&-inline {
-		@extend .tools-tooltip;
+		@extend .tooltip;
 		padding: 0.25rem 0.75rem;
 		border: 1px solid $light-warm-gray-grid-lines;
 		top: -2.25rem;
@@ -30,7 +30,7 @@
 	    transform: translateX(-50%);
 	    min-width: 9.5rem;
 	    &-body {
-	    	@extend .tools-body-4-left-dark;
+	    	@extend .body-4-left-dark;
 	    }
 		svg {
 			position: absolute;

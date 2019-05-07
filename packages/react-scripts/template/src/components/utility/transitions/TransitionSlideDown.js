@@ -10,7 +10,7 @@ class TransitionSlideDown extends Component {
 		} = this.props;
 
 		return (
-			<ReactCSSTransitionGroup transitionName='tools-transition-slide-down'
+			<ReactCSSTransitionGroup transitionName='transition-slide-down'
 				transitionEnterTimeout={600}
 				transitionLeaveTimeout={600}>
 					{isDrawerOpen ?

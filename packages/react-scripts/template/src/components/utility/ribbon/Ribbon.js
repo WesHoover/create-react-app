@@ -8,7 +8,7 @@ class Ribbon extends Component {
 		} = this.props;
 		
 		return (
-			<div className={'tools-ribbon' + (ribbonPosition.over <= 0 || ribbonPosition.under <= 0 ? ' tools-ribbon-collapse' : '')} 
+			<div className={'ribbon' + (ribbonPosition.over <= 0 || ribbonPosition.under <= 0 ? ' ribbon-collapse' : '')} 
 				style={{
 					top: !ribbonPosition.top ?
 							-3
@@ -20,7 +20,7 @@ class Ribbon extends Component {
 						ribbonPosition.top, 
 					height: ribbonPosition.height
 				}}>
-				<div className='tools-ribbon-container' style={{
+				<div className='ribbon-container' style={{
 						top: ribbonPosition.over <= 0 ? 
 								Math.max(ribbonPosition.height * -1, ribbonPosition.over) 
 							: ribbonPosition.under <= 0 ?
@@ -28,9 +28,9 @@ class Ribbon extends Component {
 							:
 								0
 					}}>
-					<div className='tools-ribbon-shadow'>
+					<div className='ribbon-shadow'>
 					</div>
-					<div className='tools-ribbon-overhang'>
+					<div className='ribbon-overhang'>
 					</div>
 				</div>
 			</div>

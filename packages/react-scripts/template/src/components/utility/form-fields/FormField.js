@@ -12,10 +12,10 @@ class FormField extends Component {
 			id
 		} = this.props;
 		return (
-			<div className={'tools-form-field ' 
-				+ (!isEmpty ? ' tools-form-field-filled' : '') 
-				+ (isFocused ? ' tools-form-field-focused' : '')
-				+ (isError ? ' tools-form-field-error' : '')}>
+			<div className={'form-field ' 
+				+ (!isEmpty ? ' form-field-filled' : '') 
+				+ (isFocused ? ' form-field-focused' : '')
+				+ (isError ? ' form-field-error' : '')}>
 				<label htmlFor={id} >
 					{label} 
 					{isRequired ?

@@ -43,8 +43,8 @@ class Search extends Component {
 			input
 		} = this.state;
 		return (
-			<div className='tools-search'>
-				<div className='tools-search-content'>
+			<div className='search'>
+				<div className='search-content'>
 					<ImageSearch />
 					<input type='text' value={input} placeholder={this.state.isFocused ? '' : this.props.placeholder || ''} ref={(input) => { this.textInput = input; }} onFocus={this.onFocus} onBlur={this.onBlur} onChange={this.handleChange}/>
 					{input.length > 0 &&

@@ -44,28 +44,28 @@ class Button extends Component {
 			progressPercentage,
 			isToggleOpen
 		} = this.props;
-		let classes = 'tools-button tools-button-' + type;
+		let classes = 'button button-' + type;
 
 		if (icon === 'toggle') {
-			classes += ' tools-button-toggle';
+			classes += ' button-toggle';
 			if (isToggleOpen) {
-				classes += ' tools-button-toggle-open';  
+				classes += ' button-toggle-open';  
 			}
 		}
 
 		if (icon === 'favorite') {
-			classes += ' tools-button-favorite';
+			classes += ' button-favorite';
 			if(isToggleOpen) {
-				classes += ' tools-button-favorite-selected';
+				classes += ' button-favorite-selected';
 			}
 		}
 
 		if (icon) {
-			classes += ' tools-button-' + icon;
+			classes += ' button-' + icon;
 		}
 
 		if(progressPercentage !== null) {
-			classes += ' tools-button-with-progress-bar';
+			classes += ' button-with-progress-bar';
 		}
 
 		return classes;
@@ -93,7 +93,7 @@ class Button extends Component {
 					{label}
 				</span>
 				{ progressPercentage !== null &&
-					<div className='tools-button-progress-bar'
+					<div className='button-progress-bar'
 						style={{
 							width: `${progressPercentage}%`
 						}}></div>

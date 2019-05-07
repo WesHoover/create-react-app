@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class TableHeader extends Component {
 	render() {
 			return (
-				<div className='tools-table-header'>
+				<div className='table-header'>
 					{this.props.children}
 				</div>
 			);

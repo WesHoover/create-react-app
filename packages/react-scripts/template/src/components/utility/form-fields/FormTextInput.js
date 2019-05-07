@@ -55,7 +55,7 @@ class FormTextInput extends Component {
 				isRequired={isRequired}
 				isError={isRequired && this.state.isEmpty && !this.state.isFocused} 
 				id={id}>
-				<input className='tools-form-text-input' 
+				<input className='form-text-input' 
 					type='text' 
 					value={val}
 					onChange={this.onChange} 

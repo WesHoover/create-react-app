@@ -1,4 +1,4 @@
-.tools-button {
+.button {
 	border: 1px solid $bright-teal;
 	text-align: center;
 	white-space: nowrap;
@@ -42,7 +42,7 @@
 		&-light-gray-text {
 			&[disabled], &:disabled {
 				color: $light-warm-gray-grid-lines;
-				.tools-image-fill {
+				.image-fill {
 					fill: $light-warm-gray-grid-lines;
 				}
 			}
@@ -52,7 +52,7 @@
 				background: $white;
 				border-color: $light-warm-gray-grid-lines;
 				opacity: 1;
-				.tools-image-fill {
+				.image-fill {
 					fill: $light-warm-gray-grid-lines;
 				}
 			}
@@ -68,46 +68,46 @@
 		}
 	}
 	&-white-icon {		
-		.tools-image-fill {
+		.image-fill {
 			fill: $white;
 		}	
 	}
 	&-teal-icon {
-		.tools-image-fill {
+		.image-fill {
 			fill: $bright-teal;
 		}
 		&[disabled], &:disabled {
-			.tools-image-fill {
+			.image-fill {
 				fill: $light-warm-gray-grid-lines;
 			}
 		}
 		&:hover, &:active {
 			&:not(:disabled):not([disabled]) {
-				.tools-image-fill {
+				.image-fill {
 					fill: $dark-teal;
 				}
 			}
 		}
 	}
 	&-gray-icon {
-		.tools-image-fill {
+		.image-fill {
 			fill: $medium-cool-gray;
 		}
 		&:hover, &:active {
-			.tools-image-fill {
+			.image-fill {
 				fill: $almost-black;
 			}
 		}
 	}
 	&-semitransparent-icon {
-		.tools-image-fill {
+		.image-fill {
 			opacity: 0.5;
 		}
 	}
 	&-hover-box {
 		&:hover, &:active {
 			background: $light-cool-gray-0-5;
-			.tools-image-fill {
+			.image-fill {
 				opacity: 1;
 			}
 		}
@@ -115,11 +115,11 @@
 	&-white-bg {
 		background: $white;
 		border-color: $white;
-		.tools-image-fill {
+		.image-fill {
 			fill: $bright-teal;
 		}
 		&:hover, &:active {
-			.tools-image-fill {
+			.image-fill {
 				fill: $dark-teal;
 			}
 		}

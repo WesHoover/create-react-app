@@ -1,6 +1,6 @@
-.tools-button-inline {
-	@extend .tools-label-3-left-teal;
-	@extend .tools-button-disabled-light-gray-text;
+.button-inline {
+	@extend .label-3-left-teal;
+	@extend .button-disabled-light-gray-text;
 	color: $bright-teal;
 	border: none;
 	display: inline-block;
@@ -12,7 +12,7 @@
 	&:hover, &:active {
 		&:not(:disabled):not([disabled]) {
 			color: $dark-teal;
-			.tools-image-fill {
+			.image-fill {
 				fill: $dark-teal;
 			}
 		}

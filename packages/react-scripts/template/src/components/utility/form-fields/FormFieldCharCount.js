@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 class FormFieldCharCount extends Component {
 	render() {
 		return (
-			<span className='tools-form-field-char-count'>
+			<span className='form-field-char-count'>
 				{this.props.count}/{this.props.charLimit}
 			</span>
 		)

@@ -1,14 +1,14 @@
-.tools-button-inline-with-message {
+.button-inline-with-message {
 	text-align: center;
-	span, .tools-button-inline {
+	span, .button-inline {
 		display: inline-block;
 	}
-	.tools-button-inline {
+	.button-inline {
 		span {
 			vertical-align: middle;
 		}
 	}
 	&-text {
-		@extend .tools-h7-center-gray;
+		@extend .h7-center-gray;
 	}
 }

@@ -14,12 +14,12 @@ class FormCheckbox extends Component {
 			disabled
 		} = this.props;
 		return (
-			<div className={'tools-form-checkbox'
-				+ (disabled && !checked ? ' tools-form-checkbox-disabled' : '')}>
+			<div className={'form-checkbox'
+				+ (disabled && !checked ? ' form-checkbox-disabled' : '')}>
 				<input type='checkbox' id={id} checked={checked} disabled={disabled && !checked} onChange={onToggleCheckbox}/>
 				<label htmlFor={id}>
 					{label ?
-						<div className='tools-form-checkbox-label'>
+						<div className='form-checkbox-label'>
 							{label}
 						</div>
 						:

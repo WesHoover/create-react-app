@@ -11,7 +11,7 @@ class TransitionSlideLeft extends Component {
 		} = this.props;
 
 		return (
-			<ReactCSSTransitionGroup transitionName={'tools-transition-slide-left'}
+			<ReactCSSTransitionGroup transitionName={'transition-slide-left'}
 				transitionEnterTimeout={transitionTime}
 				transitionLeaveTimeout={transitionTime}>
 					{isDrawerOpen ?

@@ -1,7 +1,7 @@
-.tools-button-secondary {
+.button-secondary {
 	background: transparent;
-	@extend .tools-label-3-left-teal;
-	@extend .tools-button-disabled-light-gray-text;
+	@extend .label-3-left-teal;
+	@extend .button-disabled-light-gray-text;
 	&[disabled], &:disabled {
 		border-color: $light-warm-gray-grid-lines;
 	}
@@ -9,7 +9,7 @@
 		&:not(:disabled):not([disabled]) {
 			color: $dark-teal;
 			border-color: $dark-teal;
-			.tools-image-fill {
+			.image-fill {
 				fill: $dark-teal;
 			}
 		}

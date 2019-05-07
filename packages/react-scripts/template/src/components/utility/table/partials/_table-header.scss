@@ -1,13 +1,13 @@
-.tools-table-header {
+.table-header {
 	background: $extralight-warm-gray;
-	@extend .tools-gl-top;
-	@extend .tools-gl-bottom;
+	@extend .gl-top;
+	@extend .gl-bottom;
 	&-content {   
 		@extend .container;     
 		> .grid {
 			min-height: 2.8125rem;
-	        @extend .tools-gl-left;
-	        @extend .tools-gl-right;
+	        @extend .gl-left;
+	        @extend .gl-right;
 		}
 	}
 	&-col {        
@@ -15,11 +15,11 @@
 		align-items: center;
 		justify-content: center;
 		padding: 0;
-		@extend .tools-label-5-center-med-gray;
+		@extend .label-5-center-med-gray;
 	}
 	&-subheader {
         &:not(:last-child) {
-            @extend .tools-gl-bottom;
+            @extend .gl-bottom;
         }
 	}
 	[class*='grid'] {

@@ -1,65 +1,65 @@
-.tools-transition-slide-left {
+.transition-slide-left {
 	&-enter {
-		.tools-model-build-drawer-add-models-bg, .tools-model-compare-side-panel-bg {
+		.model-build-drawer-add-models-bg, .model-compare-side-panel-bg {
 			opacity: 0;
 		}
-		.tools-model-build-drawer-add-models-panel {
+		.model-build-drawer-add-models-panel {
 			left: -33.125rem;
 		}
-		.tools-model-compare-side-panel-content {
+		.model-compare-side-panel-content {
 			left: -64rem;
 		}
-		.tools-model-build-main-drawer-add-constituents {
+		.model-build-main-drawer-add-constituents {
 			left: calc(-100% + 26rem);
 			@include m-md {
 				left: calc(-100% + 21rem);
 			}
 		}
 	}
-	&-enter-active.tools-transition-slide-left-enter {
-		.tools-model-build-drawer-add-models-bg {
+	&-enter-active.transition-slide-left-enter {
+		.model-build-drawer-add-models-bg {
 			opacity: 1;
 			transition: opacity $transition-slide-left-duration;
 		}
-		.tools-model-compare-side-panel-bg {
+		.model-compare-side-panel-bg {
 			opacity: 1;
 			transition: opacity $transition-slide-left-duration-long;
 		}
-		.tools-model-build-drawer-add-models-panel, .tools-model-build-main-drawer-add-constituents {
+		.model-build-drawer-add-models-panel, .model-build-main-drawer-add-constituents {
 			left: 0;
 			transition: left $transition-slide-left-duration;
 		}
-		.tools-model-compare-side-panel-content {
+		.model-compare-side-panel-content {
 			left: 0;
 			transition: left $transition-slide-left-duration-long;
 		}
 	}
 	&-leave {
-		.tools-model-build-drawer-add-models-bg, .tools-model-compare-side-panel-bg {
+		.model-build-drawer-add-models-bg, .model-compare-side-panel-bg {
 			opacity: 1;
 		}
-		.tools-model-build-drawer-add-models-panel, .tools-model-build-main-drawer-add-constituents, .tools-model-compare-side-panel-content {
+		.model-build-drawer-add-models-panel, .model-build-main-drawer-add-constituents, .model-compare-side-panel-content {
 			left: 0;
 		}
 	}
-	&-leave-active.tools-transition-slide-left-leave {
-		.tools-model-build-drawer-add-models-bg, .tools-model-compare-side-panel-bg {
+	&-leave-active.transition-slide-left-leave {
+		.model-build-drawer-add-models-bg, .model-compare-side-panel-bg {
 			opacity: 0;
 			transition: opacity $transition-slide-left-duration;
 		}
-	    .tools-model-compare-side-panel-bg {
+	    .model-compare-side-panel-bg {
 			opacity: 0;
 			transition: opacity $transition-slide-left-duration-long;
 		}
-		.tools-model-build-drawer-add-models-panel {
+		.model-build-drawer-add-models-panel {
 			left: -33.125rem;
 			transition: left $transition-slide-left-duration;
 		}
-		.tools-model-compare-side-panel-content {
+		.model-compare-side-panel-content {
 			left: -64rem;
 			transition: left $transition-slide-left-duration-long;
 		}
-		.tools-model-build-main-drawer-add-constituents {
+		.model-build-main-drawer-add-constituents {
 			left: calc(-100% + 26rem);
 			transition: left $transition-slide-left-duration;
 			&-container {				

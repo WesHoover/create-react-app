@@ -1,4 +1,4 @@
-.tools-table-body {
+.table-body {
 	@extend .container;
 	margin-top: -1px;
 	&-content {
@@ -11,13 +11,13 @@
 		margin-bottom: -0.0625rem;
 	}
 	a {
-		@extend .tools-body-4-left-teal;
+		@extend .body-4-left-teal;
 		&:hover {
 			color: $dark-teal;
 		}
 	}
-	.tools-lazy-load ul {
-		.tools-model-listing-table-body-row {
+	.lazy-load ul {
+		.model-listing-table-body-row {
 			&:nth-child(2) {
 				&:hover {
 					&:before {

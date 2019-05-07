@@ -26,8 +26,8 @@ class Accordion extends Component {
 			subHeader
 		} = this.props;
 		return (
-			<div className='tools-accordion'>
-				<div className='tools-accordion-header'>
+			<div className='accordion'>
+				<div className='accordion-header'>
 					<Button type='icon'
 						icon='toggle'
 						onClick={this.toggle} 
@@ -37,7 +37,7 @@ class Accordion extends Component {
 						{header}
 					</span>
 					{subHeader ? 
-						<span className='tools-accordion-subheader'>
+						<span className='accordion-subheader'>
 							{subHeader}
 						</span> 
 						:
@@ -46,7 +46,7 @@ class Accordion extends Component {
 				</div>
 				<AnimateHeight height={this.state.isExpand ? 'auto' : 0}
 					duration={200}>
-					<div className='tools-accordion-children'>
+					<div className='accordion-children'>
 						{children}
 					</div>
 				</AnimateHeight>

@@ -10,7 +10,7 @@ class RibbonFloatingPlaceholder extends Component {
 		} = this.props;
 
 		return (
-			<div className={`tools-ribbon-floating-placeholder ${className || ''}`} style={{marginTop: ribbonPosition.floatingOffset || '', top: ribbonPosition.lockedTop}}>
+			<div className={`ribbon-floating-placeholder ${className || ''}`} style={{marginTop: ribbonPosition.floatingOffset || '', top: ribbonPosition.lockedTop}}>
 				{children}
 			</div>
 		)

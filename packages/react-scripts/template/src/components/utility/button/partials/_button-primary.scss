@@ -1,14 +1,14 @@
-.tools-button-primary {
+.button-primary {
 	background: $bright-teal;
-	@extend .tools-label-3-left-white;
-	@extend .tools-button-disabled-light-gray;
+	@extend .label-3-left-white;
+	@extend .button-disabled-light-gray;
 	&:hover, &:active {
 		&:not(:disabled):not([disabled]) {
 			background: $dark-teal;
 			border-color: $dark-teal;
 		}
 	}
-	.tools-image-fill {
+	.image-fill {
 		fill: $white;
 	}
 }

@@ -1,4 +1,4 @@
-.tools-toast {
+.toast {
 	position: fixed;
 	bottom: 3rem;
 	left: 50%;
@@ -12,5 +12,5 @@
 	flex-direction: row;
 	z-index: 990;
 	cursor: default;
-	@extend .tools-body-3-left-white;
+	@extend .body-3-left-white;
 }

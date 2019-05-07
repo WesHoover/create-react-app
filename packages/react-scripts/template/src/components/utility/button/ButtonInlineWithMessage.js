@@ -8,10 +8,10 @@ class ButtonInlineWithMessage extends Component {
 		const message = this.props.text.split(this.props.buttonMatch);
 
 		return (
-			<div className='tools-button-inline-with-message'>
+			<div className='button-inline-with-message'>
 				{message.length > 1 ?
 					<span>
-						<span className='tools-button-inline-with-message-text'>
+						<span className='button-inline-with-message-text'>
 							{message[0]}
 						</span>
 						{message[0].length > 0 ?
@@ -22,12 +22,12 @@ class ButtonInlineWithMessage extends Component {
 						<Button onClick={this.props.onClick} 
 							type='inline'
 							label={this.props.buttonMatch.trim()} />
-						<span className='tools-button-inline-with-message-text'>
+						<span className='button-inline-with-message-text'>
 							{message[1]}
 						</span>
 					</span>
 					:
-					<span className='tools-button-inline-with-message-text'>
+					<span className='button-inline-with-message-text'>
 						{message}
 					</span>
 				}

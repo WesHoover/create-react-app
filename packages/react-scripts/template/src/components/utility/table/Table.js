@@ -19,7 +19,7 @@ class Table extends Component {
 	}
 	handleOnScroll(e) {
 		let windowTop = window.pageYOffset;
-		const tabsHeight = document.getElementsByClassName("tools-header")[0].offsetHeight;
+		const tabsHeight = document.getElementsByClassName("header")[0].offsetHeight;
 		let scrollFlag = windowTop > tabsHeight;
 		if (scrollFlag !== this.state.lock) {
 			this.setState({
@@ -32,8 +32,8 @@ class Table extends Component {
 			top: "0px"
 		};
 		return (
-			<div className={"tools-table " + (this.props.className || "")}>
-				<div className={this.state.lock ? "tools-table-header-stick" : ""} style={stickyStyle}>
+			<div className={"table " + (this.props.className || "")}>
+				<div className={this.state.lock ? "table-header-stick" : ""} style={stickyStyle}>
 					<TableHeader>
 						{this.props.children[0]}
 					</TableHeader>

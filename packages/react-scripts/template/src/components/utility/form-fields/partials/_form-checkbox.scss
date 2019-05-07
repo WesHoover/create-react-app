@@ -1,4 +1,4 @@
-.tools-form-checkbox {
+.form-checkbox {
 	position: relative;
 	display: inline-block;
 	height: 1.25rem;
@@ -16,7 +16,7 @@
 		min-width: 1rem;
 		cursor: pointer;
 		display: inline-block;
-		@extend .tools-body-3-left-dark;
+		@extend .body-3-left-dark;
 	}
 	&-label {
 		margin-left: 1.75rem;
@@ -28,7 +28,7 @@
 				border-color: $extralight-cool-gray;
 			}
 		}
-		.tools-image-fill {
+		.image-fill {
 			fill: $extralight-cool-gray;
 		}
 	}
@@ -38,11 +38,11 @@
 		left: 0;
 	}
 	&:hover {
-		&:not(.tools-form-checkbox-disabled) {
+		&:not(.form-checkbox-disabled) {
 			label:before {
 				border-color: $dark-teal;
 			}
-			.tools-image-fill {
+			.image-fill {
 				fill: $dark-teal;
 			}
 		}

@@ -24,14 +24,14 @@ class FakeButton extends Component {
 
 		if (disabled) {
 			return (
-				<span className='tools-fake-button tools-fake-button-disabled'>
+				<span className='fake-button fake-button-disabled'>
 					{children}
 				</span>
 			)
 		}
 
 		return (
-			<a className='tools-fake-button' 
+			<a className='fake-button' 
 				role='button'
 				tabIndex='0'
 				onClick={onClick}

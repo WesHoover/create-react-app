@@ -8,12 +8,12 @@ class TooltipOnboarding extends Component {
 			body
 		} = this.props;
 		return (
-			<div className="tools-tooltip-onboarding">
-				<h4 className='tools-h4-left-dark'>
+			<div className="tooltip-onboarding">
+				<h4 className='h4-left-dark'>
 					{title}
 				</h4>
 				{body && 
-					<p className='tools-body-3-left-dark'>
+					<p className='body-3-left-dark'>
 						{body}
 					</p>
 				}

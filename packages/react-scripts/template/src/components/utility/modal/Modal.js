@@ -21,20 +21,20 @@ class Modal extends Component {
 
 		return (
 			<TransitionModal isVisible={isVisible}>
-				<div className={`tools-modal ${className}`}>
+				<div className={`modal ${className}`}>
 					<ModalBackground onClose={handleClose} />
-					<div className='tools-modal-content'>
+					<div className='modal-content'>
 						<Button onClick={handleClose} 
 							type='icon'
 							icon='close' 
 							ariaLabel='Close dialog'/>
-						<h4 className='tools-h4-left-dark'>
+						<h4 className='h4-left-dark'>
 							{header}
 						</h4>
-						<div className='tools-modal-content-body'>
+						<div className='modal-content-body'>
 							{children}
 						</div>
-						<div className='tools-modal-actions'>
+						<div className='modal-actions'>
 							{handleSecondaryAction &&
 								<Button type='secondary'
 								label={secondaryLabel}

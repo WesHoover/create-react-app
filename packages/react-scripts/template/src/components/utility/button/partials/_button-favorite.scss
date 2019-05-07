@@ -1,15 +1,15 @@
-.tools-button-favorite {
+.button-favorite {
 	border: none;
 	svg {
 		width: 1.5rem;
 		height: 1.5rem;
 	}
-	.tools-image-fill {
+	.image-fill {
 		fill: none;
 		stroke: $bright-teal;
 	}
 	&:hover {
-		.tools-image-fill {
+		.image-fill {
 			stroke: $dark-teal;
 		}
 	}
@@ -19,11 +19,11 @@
 			width: 1.5rem;
 			height: 1.5rem;
 		}
-		.tools-image-fill {
+		.image-fill {
 			fill: $bright-teal;
 		}
 		&:hover {
-			.tools-image-fill {
+			.image-fill {
 				fill: $dark-teal;
 			}
 		}

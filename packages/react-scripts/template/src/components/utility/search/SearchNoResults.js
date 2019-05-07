@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class SearchNoResults extends Component {
 	render() {
 		return (
-			<div className='tools-search-no-results'>
-				<h5 className='tools-h5-left-gray'>
+			<div className='search-no-results'>
+				<h5 className='h5-left-gray'>
 					0 search results 
 					{this.props.searchTerm ? 
 						' for "' + this.props.searchTerm + '"'

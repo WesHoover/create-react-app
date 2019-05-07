@@ -9,7 +9,7 @@ class RibbonPlaceholder extends Component {
 		} = this.props;
 
 		return (
-			<div className='tools-ribbon-placeholder' ref={setStickyPositionRef}>
+			<div className='ribbon-placeholder' ref={setStickyPositionRef}>
 				{children}
 			</div>
 		)

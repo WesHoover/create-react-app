@@ -11,7 +11,7 @@ class TransitionModal extends Component {
 		} = this.props;
 
 		return (
-			<ReactCSSTransitionGroup transitionName='tools-transition-modal'
+			<ReactCSSTransitionGroup transitionName='transition-modal'
 				transitionEnterTimeout={500}
 				transitionLeaveTimeout={500}>
 					{isVisible ?

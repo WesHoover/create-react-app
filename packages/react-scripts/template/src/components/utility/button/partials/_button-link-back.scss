@@ -1,5 +1,5 @@
-.tools-button-link-back {
-	@extend .tools-label-3-left-white;
+.button-link-back {
+	@extend .label-3-left-white;
 	margin: 0 0 0.5rem -0.5rem;
 	display: flex;
 	align-items: flex-start;
@@ -14,7 +14,7 @@
 		margin-bottom: 0;
 	}
 	&:hover, &:active {
-		.tools-image-fill {
+		.image-fill {
 			fill: $dark-teal;
 		}
 	}

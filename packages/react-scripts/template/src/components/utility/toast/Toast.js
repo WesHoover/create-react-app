@@ -45,7 +45,7 @@ class Toast extends Component {
 		} = this.props;
 		return (
 			<TransitionToast isDisplay={isDisplay}>
-				<div className='tools-toast' onMouseEnter={this.clearTimer} onMouseLeave={this.setTimer} >
+				<div className='toast' onMouseEnter={this.clearTimer} onMouseLeave={this.setTimer} >
 					<div>
 						{copy}
 					</div>

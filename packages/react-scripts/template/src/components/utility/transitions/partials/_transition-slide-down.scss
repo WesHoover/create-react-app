@@ -1,17 +1,17 @@
-.tools-transition-slide-down {
+.transition-slide-down {
 	&-enter {
-		.tools-model-build-model-name-drawer {
+		.model-build-model-name-drawer {
 			overflow: hidden;
 			&-panel {
 				top: -11.5rem;
 				z-index: -1;
 			}
 		}
-		.tools-model-build-model-name-drawer-bg {
+		.model-build-model-name-drawer-bg {
 			opacity: 0;
 			z-index: -1;
 		}
-		.tools-model-listing-table-body-row-drawer {
+		.model-listing-table-body-row-drawer {
 			overflow: hidden;
 			height: 0;
 			&-content {
@@ -19,8 +19,8 @@
 			}
 		}
 	}
-	&-enter-active.tools-transition-slide-down-enter {
-		.tools-model-build-model-name-drawer {
+	&-enter-active.transition-slide-down-enter {
+		.model-build-model-name-drawer {
 			overflow: hidden;
 			&-panel {
 				top: 0;
@@ -28,12 +28,12 @@
 				transition: top $transition-slide-down-duration;
 			}
 		}
-		.tools-model-build-model-name-drawer-bg {
+		.model-build-model-name-drawer-bg {
 			opacity: 0.4;
 			z-index: -1;
 			transition: opacity $transition-slide-down-duration;
 		}
-		.tools-model-listing-table-body-row-drawer {
+		.model-listing-table-body-row-drawer {
 			height: $model-metadata-drawer-height;
 			transition: height $transition-slide-down-duration*0.75;
 			&-content {
@@ -43,18 +43,18 @@
 		}
 	}
 	&-leave {
-		.tools-model-build-model-name-drawer {
+		.model-build-model-name-drawer {
 			overflow: hidden;
 			&-panel {
 				top: 0;
 				z-index: -1;
 			}
 		}		
-		.tools-model-build-model-name-drawer-bg {
+		.model-build-model-name-drawer-bg {
 			opacity: 0.4;
 			z-index: -1;
 		}
-		.tools-model-listing-table-body-row-drawer {
+		.model-listing-table-body-row-drawer {
 			overflow: hidden;
 			height: $model-metadata-drawer-height;
 			&-content {
@@ -62,8 +62,8 @@
 			}
 		}
 	}
-	&-leave-active.tools-transition-slide-down-leave {
-		.tools-model-build-model-name-drawer {
+	&-leave-active.transition-slide-down-leave {
+		.model-build-model-name-drawer {
 			overflow: hidden;
 			&-panel {
 				top: -11.5rem;
@@ -71,12 +71,12 @@
 				transition: top $transition-slide-down-duration;
 			}
 		}
-		.tools-model-build-model-name-drawer-bg {
+		.model-build-model-name-drawer-bg {
 			opacity: 0;
 			z-index: -1;
 			transition: opacity $transition-slide-down-duration;
 		}
-		.tools-model-listing-table-body-row-drawer {
+		.model-listing-table-body-row-drawer {
 			height: 0;
 			transition: height $transition-slide-down-duration*0.75;
 			&-content {

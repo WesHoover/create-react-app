@@ -1,4 +1,4 @@
-.tools-tabs {
+.tabs {
 	width: 100%;
 	ul {
 		display: flex;
@@ -27,20 +27,20 @@
 			width: 100%;
 		}
 		&-active {
-			.tools-button-icon {
-				@extend .tools-button-teal-icon;
+			.button-icon {
+				@extend .button-teal-icon;
 			}
 		}
 		&-inactive {
-			.tools-button-icon {		
-				@extend .tools-button-hover-box;
-				@extend .tools-button-white-icon;
-				@extend .tools-button-semitransparent-icon;
+			.button-icon {		
+				@extend .button-hover-box;
+				@extend .button-white-icon;
+				@extend .button-semitransparent-icon;
 			}
 		}
-		.tools-button-icon {
-			@extend .tools-button-transparent-bg;
-			@extend .tools-button-icon-small;
+		.button-icon {
+			@extend .button-transparent-bg;
+			@extend .button-icon-small;
 			padding: 0;
 			position: absolute;
 			top: 0.8125rem;
