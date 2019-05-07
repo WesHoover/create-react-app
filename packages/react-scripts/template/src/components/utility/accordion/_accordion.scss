@@ -1,0 +1,32 @@
+.tools-accordion {
+	&-header {
+		@extend .tools-label-3-left-med-gray;
+		@extend .tools-gl-bottom;
+		background: $extralight-warm-gray;
+		padding: 1rem 0.75rem 1rem 3rem;
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		cursor: default;
+	}
+	&-subheader {
+		width: 4.25rem;
+		margin-right: 2.75rem;
+		flex-shrink: 0;
+		text-align: right;
+		letter-spacing: 0;
+	}
+	.tools-button-toggle {
+		@extend .tools-button-transparent-bg;
+		@extend .tools-button-teal-icon;
+		position: absolute;
+		left: 0.5rem;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 2.75rem;
+		width: 2.75rem;
+		flex-shrink: 0;
+	}
+}

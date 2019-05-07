@@ -1,0 +1,57 @@
+.tools-ribbon {	
+	position: absolute;
+	width: $model-build-ribbon-overhang+1.5rem;
+	margin-top: -0.75rem;
+	transition: border 0.2s;
+	border-right: 0 solid transparent;
+	right: -$model-build-ribbon-overhang;
+	&-placeholder {
+		flex: 1 1;
+		padding-bottom: $model-build-ribbon-overhang;
+		display: flex;
+		justify-content: flex-end;
+		padding-left: 1rem;
+		&-content {
+			background: $white;
+			border: 1px solid $light-warm-gray-grid-lines;
+			border-right: none;
+			box-shadow: $light-warm-gray 0 0.625rem 0.625rem -0.625rem;
+			padding: 1rem 1.75rem 1.25rem 1.5rem;
+			margin-right: -3.75rem;
+			width: calc(100% + 3.75rem);
+		}
+	}
+	&-container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: calc(100% - #{$model-build-ribbon-overhang});
+		width: 100%;
+	}
+	&-shadow {
+		@include m-triangle($dark-cool-gray, left, 0.5rem);
+		bottom: -$model-build-ribbon-overhang;
+		right: 0.25rem;
+		transform: rotate(45deg);
+		transition: all 0.2s;
+		transition-delay: 0.1s
+	}
+	&-overhang {
+		height: 100%;
+		width: 100%;
+		background: $white;
+		position: absolute;
+		top: 0;
+		right: 0;
+		@extend .tools-gl-top;
+		@extend .tools-gl-bottom;
+	}
+	&-collapse {
+		border-right: $model-build-ribbon-overhang solid transparent;
+		overflow: hidden;
+		.tools-ribbon-shadow {
+			bottom: 0;
+			border-right: transparent;
+		}
+	}
+}

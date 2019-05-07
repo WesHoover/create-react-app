@@ -1,0 +1,16 @@
+.tools-toast {
+	position: fixed;
+	bottom: 3rem;
+	left: 50%;
+	transform: translateX(-50%);
+	background: $almost-black;
+	padding: 0.75rem 1.5rem;
+	width: 27rem;
+	box-shadow: 0 2px 4px 0 $charcoal-gray-0-4;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	z-index: 990;
+	cursor: default;
+	@extend .tools-body-3-left-white;
+}

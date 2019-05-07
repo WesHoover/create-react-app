@@ -1,0 +1,28 @@
+.tools-transition-toast {
+	&-enter {
+		.tools-toast {
+			bottom: 0;
+			opacity: 0;
+		}
+	}
+	&-enter-active.tools-transition-toast-enter {
+		.tools-toast {
+			bottom: 3rem;
+			opacity: 1;
+			transition: bottom $transition-toast-duration, opacity $transition-toast-opacity-duration;
+		}
+	}
+	&-leave {
+		.tools-toast {
+			bottom: 3rem;
+			opacity: 1;
+		}	
+	}
+	&-leave-active.tools-transition-toast-leave {
+		.tools-toast {
+			bottom: 0;
+			opacity: 0;
+			transition: bottom $transition-toast-duration, opacity $transition-toast-opacity-duration;
+		}
+	}
+}

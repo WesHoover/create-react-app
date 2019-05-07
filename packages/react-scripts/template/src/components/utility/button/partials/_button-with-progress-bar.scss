@@ -1,0 +1,17 @@
+.tools-button-with-progress-bar {
+    &, &:hover, &:focus, &[disabled], &.tools-button-disabled {
+        background: $dark-teal;
+        border-color: $dark-teal;
+    }
+    span {
+        position: relative;
+		z-index: 2;
+    }
+	.tools-button-progress-bar {
+        position: absolute;
+        bottom:0;
+        left:0;
+        height: 100%;
+        background-color: $bright-teal;
+    }
+}

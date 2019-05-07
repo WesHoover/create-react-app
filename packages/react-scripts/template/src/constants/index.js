@@ -1,0 +1,1 @@
+// put anything considered a global constant here, and/or even import and centralize constants, or even delete this entirley

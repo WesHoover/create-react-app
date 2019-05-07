@@ -8,3 +8,25 @@
 		margin: 1.125rem 0 -2px 0;
 	}
 }
+
+// replace namespaces with current project nickname
+.tools-image {
+	&-fill {
+		fill: $bright-teal;
+		&-dark-teal {
+			fill: $dark-teal;
+		}
+		&-light-gray {
+			fill: $light-gray;
+		}
+		&-light-warm-gray {
+			fill: $light-warm-gray-grid-lines;
+		}
+	}
+	&-stroke {
+		stroke: $bright-teal;
+	}
+	&-arrow {
+		transform: rotate(90deg);
+	}
+}

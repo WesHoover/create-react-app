@@ -1,0 +1,99 @@
+.tools-form-field {
+	width: 100%;
+	position: relative;
+	margin-top: 1.25rem;
+	display: flex;
+	flex-direction: column;
+	input[type='text'], textarea {
+		background: transparent;
+		border: none;
+		border-bottom: 1px solid $medium-warm-gray;
+		margin-bottom: 1px;
+		width: 100%;
+		@extend .tools-body-3-left-dark;
+	}
+	label {
+		@extend .tools-body-3-left-dark;
+		position: absolute;
+		left: 0;
+		transition: top 0.1s;
+		top: 0;
+		cursor: text;
+	}
+	.tools-dropdown__control {
+		padding-top: 1.25rem;
+		margin-top: -1.25rem;
+	}
+	&-filled {
+		label {
+			top: -1.25rem;
+			cursor: default;
+			width: 100%;
+			padding-bottom: 0.5rem;
+			@extend .tools-body-4-left-dark;
+		}
+		&.tools-form-field-focused, &:hover {
+			label {
+				@extend .tools-body-4-left-teal;
+			}
+		}
+		&.tools-form-field-focused {
+			.tools-form-field-char-count {
+				display: block;
+			}
+		}
+	}
+	&-focused {
+		label {
+			top: -1.25rem;
+			cursor: default;
+			@extend .tools-body-4-left-teal;
+		}
+		textarea {
+			padding-bottom: 0;
+		}
+	}
+	&-focused, &:hover, &:focus {
+		&:not(.tools-form-field-error) {
+			input[type='text'], textarea, .tools-dropdown__control {
+				border-bottom: 2px solid $bright-teal;
+				margin-bottom: 0;
+			}
+		}
+	}
+	&-error {
+		@extend .tools-form-field-focused;
+		label {
+			color: $error-red;
+		}	
+		input[type='text'], textarea {
+			border-bottom: 2px solid $error-red;
+			margin-bottom: 0;
+		}		
+	}
+	&-char-count {
+		position: absolute;
+		right: 0;
+		bottom: -1.125rem;
+		display: none;
+		@extend .tools-body-4-left-dark;
+	}
+	&-no-border {
+		&, &-focused, &:hover, &:focus {
+			input[type='text'], textarea, .tools-dropdown__control {
+				border-bottom: none;
+				margin-bottom: 1px;
+			}
+		}
+		.tools-dropdown__single-value {
+			margin-left: 0;
+		}
+	}
+	&:hover {
+		.tools-react-select-arrow {
+			.tools-image-fill {
+				fill: $bright-teal;
+			}
+		}
+	}
+}

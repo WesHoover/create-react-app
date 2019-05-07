@@ -1,0 +1,31 @@
+.tools-button-favorite {
+	border: none;
+	svg {
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+	.tools-image-fill {
+		fill: none;
+		stroke: $bright-teal;
+	}
+	&:hover {
+		.tools-image-fill {
+			stroke: $dark-teal;
+		}
+	}
+	&-selected {
+		border: none;
+		svg {
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+		.tools-image-fill {
+			fill: $bright-teal;
+		}
+		&:hover {
+			.tools-image-fill {
+				fill: $dark-teal;
+			}
+		}
+	}
+}

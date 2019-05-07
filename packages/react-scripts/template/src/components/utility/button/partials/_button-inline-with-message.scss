@@ -1,0 +1,14 @@
+.tools-button-inline-with-message {
+	text-align: center;
+	span, .tools-button-inline {
+		display: inline-block;
+	}
+	.tools-button-inline {
+		span {
+			vertical-align: middle;
+		}
+	}
+	&-text {
+		@extend .tools-h7-center-gray;
+	}
+}

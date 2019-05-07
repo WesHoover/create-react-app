@@ -1,0 +1,20 @@
+.tools-button-inline {
+	@extend .tools-label-3-left-teal;
+	@extend .tools-button-disabled-light-gray-text;
+	color: $bright-teal;
+	border: none;
+	display: inline-block;
+	padding: 0 0.25rem;
+	background: transparent;
+	line-height: 1.5;
+	vertical-align: middle;
+	white-space: normal;
+	&:hover, &:active {
+		&:not(:disabled):not([disabled]) {
+			color: $dark-teal;
+			.tools-image-fill {
+				fill: $dark-teal;
+			}
+		}
+	}
+}

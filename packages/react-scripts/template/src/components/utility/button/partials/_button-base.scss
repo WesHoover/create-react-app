@@ -1,0 +1,156 @@
+.tools-button {
+	border: 1px solid $bright-teal;
+	text-align: center;
+	white-space: nowrap;
+	span, svg {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&-primary, &-secondary {	
+		padding: 0 1.5rem;
+		height: 3rem;	
+		svg {
+			margin-left: 0.5rem;
+		}
+		@include m-md {
+			padding: 0;
+			height: 2.25rem;
+		}
+	}
+	&-teal-bg {		
+		background: $bright-teal;
+		&[disabled], &:disabled {
+			border-color: $medium-cool-gray;
+			background: $medium-cool-gray;
+			opacity: 0.5;
+		}
+		&:hover, &:active {
+			&:not(:disabled):not([disabled]) {
+				background: $dark-teal;
+				border-color: $dark-teal;
+			}
+		}
+	}
+	&-disabled {
+		&-light-gray {
+			&[disabled], &:disabled {
+				background: $light-warm-gray;
+				border-color: $light-warm-gray;
+				opacity: 1;
+			}
+		}
+		&-light-gray-text {
+			&[disabled], &:disabled {
+				color: $light-warm-gray-grid-lines;
+				.tools-image-fill {
+					fill: $light-warm-gray-grid-lines;
+				}
+			}
+		}
+		&-white {
+			&[disabled], &:disabled {
+				background: $white;
+				border-color: $light-warm-gray-grid-lines;
+				opacity: 1;
+				.tools-image-fill {
+					fill: $light-warm-gray-grid-lines;
+				}
+			}
+		}
+	}
+	
+	&-transparent-bg {
+		background: transparent;
+		border-color: transparent;
+		&:hover, &:active {
+			background: transparent;
+			border-color: transparent;
+		}
+	}
+	&-white-icon {		
+		.tools-image-fill {
+			fill: $white;
+		}	
+	}
+	&-teal-icon {
+		.tools-image-fill {
+			fill: $bright-teal;
+		}
+		&[disabled], &:disabled {
+			.tools-image-fill {
+				fill: $light-warm-gray-grid-lines;
+			}
+		}
+		&:hover, &:active {
+			&:not(:disabled):not([disabled]) {
+				.tools-image-fill {
+					fill: $dark-teal;
+				}
+			}
+		}
+	}
+	&-gray-icon {
+		.tools-image-fill {
+			fill: $medium-cool-gray;
+		}
+		&:hover, &:active {
+			.tools-image-fill {
+				fill: $almost-black;
+			}
+		}
+	}
+	&-semitransparent-icon {
+		.tools-image-fill {
+			opacity: 0.5;
+		}
+	}
+	&-hover-box {
+		&:hover, &:active {
+			background: $light-cool-gray-0-5;
+			.tools-image-fill {
+				opacity: 1;
+			}
+		}
+	}
+	&-white-bg {
+		background: $white;
+		border-color: $white;
+		.tools-image-fill {
+			fill: $bright-teal;
+		}
+		&:hover, &:active {
+			.tools-image-fill {
+				fill: $dark-teal;
+			}
+		}
+	}
+	&-toggle {
+		padding: 0;
+		svg {
+			transition: transform $transition-icon-rotate;
+		}
+		&-open {
+			svg {
+				transform: rotate(-90deg);
+			}
+		}
+	}
+	&-remove {
+		svg {
+			width: 1.25rem;
+			height: 1.25rem;
+		}
+	}
+	&-small-icon {
+		svg {
+			width: 1.125rem;
+			height: 1.125rem;
+		}
+	}
+	&-xsmall-icon {
+		svg {
+			width: 0.75rem;
+			height: 0.75rem;
+		}
+	}
+}

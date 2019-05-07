@@ -1,0 +1,47 @@
+.tools-tooltip {
+	position: absolute;
+	z-index: 1;
+	&-onboarding {
+		@extend .tools-tooltip;
+		width: 13.75rem;
+		background: $light-gray;
+		right: 0;
+		top: 100%;
+		padding: 1.25rem 1.75rem;
+		p {
+			margin-top: 0.75rem;
+		}
+		&:before {
+			@include m-triangle($light-gray, up, 1.5rem);
+			border-left-width: 1.125rem;
+			border-right-width: 1.125rem;
+			top: -1.5rem;
+			right: 1.375rem;
+		}
+	}
+	&-inline {
+		@extend .tools-tooltip;
+		padding: 0.25rem 0.75rem;
+		border: 1px solid $light-warm-gray-grid-lines;
+		top: -2.25rem;
+		background: $white;
+		display: none;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    min-width: 9.5rem;
+	    &-body {
+	    	@extend .tools-body-4-left-dark;
+	    }
+		svg {
+			position: absolute;
+			bottom: -0.75rem;
+			width: 1.5rem;
+			height: 0.75rem;
+			left: calc(50% - 0.75rem);
+		}
+		polygon {
+			stroke: $light-warm-gray-grid-lines;
+			fill: $white;
+		}
+	}
+}

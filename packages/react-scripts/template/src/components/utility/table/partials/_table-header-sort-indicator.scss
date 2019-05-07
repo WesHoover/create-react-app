@@ -1,0 +1,23 @@
+.tools-table-header-sort-indicator {
+	padding-left: 0.25rem;
+	svg {
+		display: block;
+		width: 0.7rem;
+		height: 0.7rem;
+	}
+	.tools-image-fill {
+		fill: $medium-cool-gray;
+	}
+	&-arrow {
+		&:first-child {
+			svg {
+				transform: rotate(-90deg);
+			}
+		}
+		&[data-active="true"] {
+			.tools-image-fill {
+				fill: $bright-teal;
+			}
+		}
+	}
+}

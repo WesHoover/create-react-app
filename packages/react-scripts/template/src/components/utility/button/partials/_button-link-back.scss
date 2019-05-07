@@ -1,0 +1,21 @@
+.tools-button-link-back {
+	@extend .tools-label-3-left-white;
+	margin: 0 0 0.5rem -0.5rem;
+	display: flex;
+	align-items: flex-start;
+	background: transparent;
+	border: none;
+	padding: 0;
+	span {
+		line-height: 1.5rem;
+		margin-left: 0.25rem;
+	}
+	@include m-md {
+		margin-bottom: 0;
+	}
+	&:hover, &:active {
+		.tools-image-fill {
+			fill: $dark-teal;
+		}
+	}
+}

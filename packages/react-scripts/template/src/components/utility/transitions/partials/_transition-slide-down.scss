@@ -1,0 +1,88 @@
+.tools-transition-slide-down {
+	&-enter {
+		.tools-model-build-model-name-drawer {
+			overflow: hidden;
+			&-panel {
+				top: -11.5rem;
+				z-index: -1;
+			}
+		}
+		.tools-model-build-model-name-drawer-bg {
+			opacity: 0;
+			z-index: -1;
+		}
+		.tools-model-listing-table-body-row-drawer {
+			overflow: hidden;
+			height: 0;
+			&-content {
+				bottom: $model-metadata-drawer-height;
+			}
+		}
+	}
+	&-enter-active.tools-transition-slide-down-enter {
+		.tools-model-build-model-name-drawer {
+			overflow: hidden;
+			&-panel {
+				top: 0;
+				z-index: -1;
+				transition: top $transition-slide-down-duration;
+			}
+		}
+		.tools-model-build-model-name-drawer-bg {
+			opacity: 0.4;
+			z-index: -1;
+			transition: opacity $transition-slide-down-duration;
+		}
+		.tools-model-listing-table-body-row-drawer {
+			height: $model-metadata-drawer-height;
+			transition: height $transition-slide-down-duration*0.75;
+			&-content {
+				bottom: 0;
+				transition: bottom $transition-slide-down-duration*0.75;
+			}
+		}
+	}
+	&-leave {
+		.tools-model-build-model-name-drawer {
+			overflow: hidden;
+			&-panel {
+				top: 0;
+				z-index: -1;
+			}
+		}		
+		.tools-model-build-model-name-drawer-bg {
+			opacity: 0.4;
+			z-index: -1;
+		}
+		.tools-model-listing-table-body-row-drawer {
+			overflow: hidden;
+			height: $model-metadata-drawer-height;
+			&-content {
+				bottom: 0;
+			}
+		}
+	}
+	&-leave-active.tools-transition-slide-down-leave {
+		.tools-model-build-model-name-drawer {
+			overflow: hidden;
+			&-panel {
+				top: -11.5rem;
+				z-index: -1;
+				transition: top $transition-slide-down-duration;
+			}
+		}
+		.tools-model-build-model-name-drawer-bg {
+			opacity: 0;
+			z-index: -1;
+			transition: opacity $transition-slide-down-duration;
+		}
+		.tools-model-listing-table-body-row-drawer {
+			height: 0;
+			transition: height $transition-slide-down-duration*0.75;
+			&-content {
+				bottom: $model-metadata-drawer-height;
+				transition: bottom $transition-slide-down-duration*0.75;
+			}
+		}
+	}
+}
