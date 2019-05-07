@@ -18,7 +18,7 @@
   "scripts": {
     "test:lint:js": "eslint src/",
     "test:lint:css": "stylelint \"**/*.scss\"",
-    "test:unit": "npm run build-css && react-scripts test --env=jsdom",
+    "test:unit": "npm run build-css && react-scripts test",
     "stylelint-check": "stylelint-config-prettier-check",
     "eject": "react-scripts eject",
     "build-css": "node-sass-chokidar src/ -o src/",
@@ -28,9 +28,6 @@
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
     "postbuild": "robocopy build/static/ ../static/ /mir /njs /njs /np /ndl /nfl /ns /nc & robocopy build/ ../static/ asset-manifest.json /njs /njs /np /ndl /nfl /ns /nc & robocopy src/ ../static/css/ rte-styles.css /njs /njs /np /ndl /nfl /ns /nc & echo static created",
-    "prettier:check:js": "prettier --debug-check src/**/*.js src/**/*.jsx",
-    "prettier:check:scss": "prettier --debug-check src/**/*.scss",
-    "prettier:check": "run-s prettier:check:**",
     "prettier:fix:js": "prettier --write src/**/*.js src/**/*.jsx",
     "prettier:fix:scss": "prettier --write src/**/*.scss",
     "prettier:fix": "prettier --write prettier:fix:**",
